@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="请输入你的用户名" width="200" id='userName' />
+    <button id="confirm">确定</button>
+    <ul class="userlistbox"></ul>
+    <div class="flexChild" id="camera-container">
+      <div class="camera-box">
+        <video id="received_video" autoplay></video>
+        <video id="local_video" autoplay muted></video>
+        <button id="hangup-button" onclick="hangUpCall();" disabled>
+          Hang Up
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/client.js"></script>
